@@ -19,7 +19,7 @@
           <label for="github">Github Username</label>
           <input type="text" name="github" class="form-control" ng-model="sigmanaut.newPerson.github" placeholder="Github Username"/>
         <br />
-          <button type="submit" ng-click="sigmanaut.createPerson()">Submit</button>
+          <button type="submit" class="btn btn-primary" ng-click="sigmanaut.createPerson()">Submit</button>
 
         </div>
         <div class="from-group col-md-6">
@@ -33,9 +33,9 @@
     <section class="container">
       <h3>Class List</h3>
       <ul class="list-group">
-        <li class="list-group-item" ng-repeat="thing in sigmanaut.people"> <!-- What needs to be repeated? -->
+        <li class="list-group-item" ng-repeat="potato in sigmanaut.people"> <!-- What needs to be repeated? -->
 
-      {{thing.firstName}} {{thing.lastName}} {{thing.github}} {{thing.shoutout}} 
+      {{potato.firstName}} {{potato.lastName}} {{potato.github}} - <i>{{potato.shoutout}}</i>
         </li>
       </ul>
     </section>
