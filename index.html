@@ -33,9 +33,9 @@
     <section class="container">
       <h3>Class List</h3>
       <ul class="list-group">
-        <li class="list-group-item" ng-repeat="potato in sigmanaut.people"> <!-- What needs to be repeated? -->
+        <li class="list-group-item" ng-repeat="person in sigmanaut.people"> <!-- What needs to be repeated? -->
 
-      {{potato.firstName}} {{potato.lastName}} {{potato.github}} - <i>{{potato.shoutout}}</i>
+      <a ng-href="https://github.com/{{person.github}}">{{person.firstName}} {{person.lastName}} - <i>{{person.shoutout}}</i> </a>
         </li>
       </ul>
     </section>
